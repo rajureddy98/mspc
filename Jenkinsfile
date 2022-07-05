@@ -15,8 +15,9 @@ pipeline {
         stage('parent-build'){
             steps {
                 sh '''
-                echo $JAVA_HOME
-                mvn clean package
+                    echo $JAVA_HOME
+                    mvn clean package
+                '''
             }
         }
     }
