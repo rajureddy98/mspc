@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh '''
                     echo $JAVA_HOME
-                    mvn clean complie
+                    mvn clean compile
                 '''
             }
         }
